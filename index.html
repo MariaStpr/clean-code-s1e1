@@ -14,7 +14,7 @@
     >
   </head>
   <body>
-    <div class="intro">
+    <article class="intro">
       <img src="./eisenhower-matrix.jpg">
       <a
         class="intro__link-more"
@@ -22,9 +22,9 @@
       >
       Want more details?
       </a>
-    </div>
-    <div class="main">
-      <p id="new-task">
+    </article>
+    <main class="main">
+      <fieldset id="new-task">
         <label for="new-task__input">Add Item</label>
         <div class="new-task__wrapper">
           <input
@@ -34,45 +34,48 @@
           >
           <button class="button">Add</button>
         </div>
-      </p>
-      <h3 class="title">Todo</h3>
-      <ul id="tasks_incomplete">
-        <li class="tasks-item">
-          <input type="checkbox">
-          <label class="task task__label">Pay Bills</label>
-          <input type="text" class="task">
-          <button class="button btn-edit">Edit</button>
-          <button class="button btn-delete">
-            <img src="./remove.svg">
-          </button>
-        </li>
-        <li class="tasks-item edit-mode">
-          <input type="checkbox">
-          <label class="task task__label">Go Shopping</label>
-          <input
-            type="text"
-            value="Go Shopping"
-            class="task"
-          >
-          <button class="button btn-edit">Save</button>
-          <button class="button btn-delete">
-            <img src="./remove.svg">
-          </button>
-        </li>
-      </ul>
-      <h3 class="title">Completed</h3>
-      <ul id="tasks_complete">
-        <li class="tasks-item">
-          <input type="checkbox" checked>
-          <label class="task task__label">See the Doctor</label>
-          <input type="text" class="task">
-          <button class="button btn-edit">Edit</button>
-          <button class="button btn-delete">
-            <img src="./remove.svg">
-          </button>
-        </li>
-      </ul>
-    </div>
+      </fieldset>
+      <fieldset>
+        <legend class="title">Todo</legend>
+        <ul id="tasks_incomplete">
+          <li class="tasks-item">
+            <input type="checkbox">
+            <label class="task task__label">Pay Bills</label>
+            <input type="text" class="task">
+            <button class="button btn-edit">Edit</button>
+            <button class="button btn-delete">
+              <img src="./remove.svg">
+            </button>
+          </li>
+          <li class="tasks-item edit-mode">
+            <input type="checkbox">
+            <label class="task task__label">Go Shopping</label>
+            <input
+              type="text"
+              value="Go Shopping"
+              class="task"
+            >
+            <button class="button btn-edit">Save</button>
+            <button class="button btn-delete">
+              <img src="./remove.svg">
+            </button>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend class="title">Completed</legend>
+        <ul id="tasks_complete">
+          <li class="tasks-item">
+            <input type="checkbox" checked>
+            <label class="task task__label">See the Doctor</label>
+            <input type="text" class="task">
+            <button class="button btn-edit">Edit</button>
+            <button class="button btn-delete">
+              <img src="./remove.svg">
+            </button>
+          </li>
+        </ul>
+      </fieldset>
     <script src="app.js"></script>
   </body>
 </html>
